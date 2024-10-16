@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+}
+body{
+  max-width: 100%;
+}
+header {
+  background-color: var(--primary-color);
+text-align: center;
+max-width: 100%;
+}
+nav {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center items horizontally */
+  gap: 1.5em; /* Space between links */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+h1{
+  margin: -.25em;
+  max-width: 100%;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+nav a:hover {
+  color: var(--accent-color); 
+}
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+    color: white;
+
+  }
+  main h1{
+    color: black;
+    text-align: center;
+    padding: 1em;
+  }
+
+  a:link,
+  a:visited {
+    color: var(--text-light);
+    padding: 1em;
+    
+  }
+.main{
+    display: grid;
+
+  }
+.img {
+	max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+
+}
+
+#mountains {
+  margin: 4px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border: 5px solid white;
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+}
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1em 0;
+  color: var(--text-light);
+}
+footer h1{
+  text-align: left;
+  font-size: 20px;
+}
+
+#menu-button {
+  display: none;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+.hide {
+  display: none;
+}
+.menu-button {
+  background-color: transparent;
+  color: var(--text-light);
+  border: none;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+
+}
+.viewer{
+  position:fixed;
+  top:0;left:0;bottom:0;right:0;
+  background-color: rgba(0, 0, 0, 0.75);;
+}
+@media screen and (min-width: 700px) {
+  .gallery {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .gallery {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 1000px) {
+  #menu-button {
+      display: none; 
+  }
+  nav {
+      display: flex; 
+  }
+}
