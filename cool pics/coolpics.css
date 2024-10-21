@@ -17,10 +17,10 @@ text-align: center;
 max-width: 100%;
 }
 nav {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center items horizontally */
-  gap: 1.5em; /* Space between links */
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  display: flex; 
+  justify-content: center; 
+  gap: 1.5em; 
+  flex-wrap: wrap;
 }
 h1{
   margin: -.25em;

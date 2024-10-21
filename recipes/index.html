@@ -8,16 +8,24 @@
 </head>
 <body>
 <header>
-    <h1>        
-        <p> Recipe Book</p>
-        <img src="pictures/recipe-book.png" alt="Recipe book logo" id="logo">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-    </h1> 
+    <div class="logo">
+        <img src="pictures/recipe-book.png" alt="Recipe Book Logo">
+        <h1>Recipe Book</h1>
+      </div>
+      <form class="search-bar" action="#">
+        <input type="text" id="search-input" placeholder="Find your recipe">
+
+      </form>
 </header>
 <main>
+    <section class="recipe-section">
+        <figure class="recipe">
+          <img src="pictures/sweet-potato-waffle-md.jpg" alt="sweet potato waffle" />
+            <ul class="recipe__tags">
+              <li>dessert</li>
+            </ul>
+            <h2>Potato Waffle</h2>
+            <p class="recipe__ratings">
     <span
 	class="rating"
 	role="img"
@@ -34,10 +42,11 @@
     <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a> 
     <div class="social">
         <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
-        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
-        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
-        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        <a href="#"><img src="pictures/instagram_icon.svg" alt="instagram icon"></a>
+        <a href="#"><img src="pictures/youtube_icon.svg" alt="youtube icon"></a>
+        <a href="#"><img src="pictures/pinterest_icon.svg" alt="pinterest icon"></a>
     </div>
+ 
 </footer>
 
     <script defer src="recipes.js"></script> 

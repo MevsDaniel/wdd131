@@ -1,4 +1,4 @@
-/* form-demo.css */
+
 * {
     box-sizing: border-box;
   }
@@ -16,14 +16,14 @@
     border: 1px solid red;
     padding: 0.5em;
   }
-  /* Style the select arrow for Safari */
+
   select::-webkit-inner-spin-button,
   select::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
   
-  /* Style the select arrow for other browsers */
+
   select {
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -31,9 +31,8 @@
   }
   
   .hide {
-    display: none; /* Initially hide the credit card input and label */
+    display: none; 
   }
-  /* form-demo.css */
 
 label {
     display: block;
@@ -47,7 +46,7 @@ label {
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc; /* Add a border to make it visually consistent */
+    border: 1px solid #ccc; 
     border-radius: 4px;
   }
   button {
