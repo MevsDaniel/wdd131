@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #CFF1FB; 
+    --secondary-color: #3C99DC; 
+    --accent1-color: #D1D1F9; 
+    --accent2-color: #d5f3fe; 
+  
+    --heading-font: 'Pacifico', cursive;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+}
+  
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #333;
+}
+
+header h2 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+
+
+}
+
+nav a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#milestoneImage {
+    display: none;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+form, .milestone-details {
+    max-width: 400px;
+    width: 90%;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--primary-color);
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input, textarea, button, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent2-color);
+}
+
+.milestone-info {
+    background: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.milestone-info p {
+    color: #333;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}

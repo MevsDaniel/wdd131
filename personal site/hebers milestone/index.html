@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heber's Milestones - Input</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h2>Heber's Life Milestones</h2>
+     <div id="heberAgeDisplay"></div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="personal site/site-plan.html">Site Plan</a>
+        <a href="page-two.html">Milestone List</a>
+      </nav>
+</header>
+<main>
+<img id="milestoneImage" alt="CDC Milestone for Age">
+<form id="milestoneForm">
+    <label for="milestoneCategory">Select Milestone Category</label>
+    <select id="milestoneCategory" required>
+        <option value="Motor Milestones">Motor Milestones</option>
+        <option value="Sensory Milestones">Sensory Milestones</option>
+        <option value="Communication Milestones">Communication Milestones</option>
+        <option value="Feeding Milestones">Feeding Milestones</option>
+        <p id="heberAge"></p>
+    </select>
+
+    <label for="milestoneTimeRange">Milestone Age</label>
+    <select id="milestoneTimeRange" required>
+        <option value="9 months">9 months</option>
+        <option value="1 year">1 year</option>
+        <option value="15 months">15 months</option>
+        <option value="18 months">18 months</option>
+        <option value="2 years">2 years</option>
+        <option value="30 months">30 months</option>
+        <option value="3 years">3 years</option>
+        <option value="4 years">4 years</option>
+        <option value="5 years">5 years</option>
+    </select>
+
+    <label for="milestoneDescription">Description</label>
+    <textarea id="milestoneDescription" rows="4" required></textarea>
+
+    <button type="submit">Save Milestone</button>
+</form>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
